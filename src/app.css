@@ -1,0 +1,18 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+main {
+  width: 80%;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.image {
+}
