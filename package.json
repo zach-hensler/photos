@@ -9,7 +9,6 @@
     "upgrade": "npx npm-check-updates -u",
     "createCNAME": "mkdir -p build && echo pages.zach-hensler.com > ./build/CNAME",
     "build": "tsc && vite build && npm run createCNAME",
-    "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
@@ -21,6 +20,6 @@
     "@preact/preset-vite": "^2.10.5",
     "@types/node": "^24.12.3",
     "typescript": "~6.0.2",
-    "vite": "^8.0.12"
+    "vite": "^8.1.0"
   }
 }
