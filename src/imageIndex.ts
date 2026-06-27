@@ -4,13 +4,15 @@ export interface ImageMetadata {
 }
 
 export const imageIndex: ImageMetadata[] = [
+    { file: 'robin.JPG' },
+    { file: 'catbird.jpg' },
     { file: 'dappled_path.jpg' },
     { file: 'mossy_log.jpg' },
     { file: 'evening_fence.jpg' },
     { file: 'big_dipper.jpg' },
     { file: 'white_flower.JPG' },
     { file: 'evening_pines.JPG' },
-    { file: 'big_red_cloud.jpg' },
+    // { file: 'big_red_cloud.jpg' },
     { file: 'sunset_clouds.jpg' },
     { file: 'stars.jpg' },
     { file: 'bird_feeder.JPG' },

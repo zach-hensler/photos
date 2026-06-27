@@ -1,7 +1,8 @@
 :root {
-  --font: white;
-  --bg: hsl(276, 100%, 4.9%);
+  --bg: hsl(260, 100%, 4%);
   --bg-lighter: hsl(from var(--bg) h s calc(l + 3));
+
+  --font: hsl(from var(--bg) h s 88%);
 
   --total-width: 80%;
 
@@ -56,7 +57,7 @@ h1 {
 
 .image {
   cursor: zoom-in;
-  max-width: 45%;
+  max-width: 48%;
   padding: var(--spacing-m) 0;
 }
 
