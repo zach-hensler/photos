@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "vite",
     "upgrade": "npx npm-check-updates -u",
-    "createCNAME": "mkdir -p build && echo pages.zach-hensler.com > ./build/CNAME",
+    "createCNAME": "mkdir -p build && echo photos.zach-hensler.com > ./build/CNAME",
     "build": "tsc && vite build && npm run createCNAME",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
