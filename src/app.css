@@ -1,18 +1,80 @@
+:root {
+  --font: white;
+  --bg: hsl(276, 100%, 4.9%);
+  --bg-lighter: hsl(from var(--bg) h s calc(l + 3));
+
+  --total-width: 80%;
+
+  --spacing-s: 15px;
+  --spacing-m: calc(var(--spacing-s) * 2);
+  --spacing-l: calc(var(--spacing-m) * 2);
+}
+
 html, body {
   margin: 0;
   padding: 0;
   width: 100%;
+  background: var(--bg);
+  color: var(--font);
+  font-family: 'Verdana', 'sans-serif';
 }
 
 main {
-  width: 80%;
+  width: var(--total-width);
+  margin: auto;
+  padding: 0;
+}
+
+footer {
+  background: var(--bg-lighter);
+  margin-top: var(--spacing-l);
+  padding: var(--spacing-m) 0;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  width: var(--total-width);
+  margin: auto;
+}
+
+a, a:visited {
+  text-decoration: underline;
+  color: var(--font);
+}
+
+h1 {
+  margin: var(--spacing-l) 0 var(--spacing-m) 0;
 }
 
 .image-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .image {
+  cursor: zoom-in;
+  max-width: 45%;
+  padding: var(--spacing-m) 0;
+}
+
+dialog {
+  width: 80%;
+  height: 80%;
+  border: none;
+  display: flex;
+  background: var(--bg-lighter);
+}
+
+::backdrop {
+  background: var(--bg);
+  opacity: 0.8;
+}
+
+.dialog-image {
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
 }
