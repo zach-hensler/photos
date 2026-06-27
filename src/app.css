@@ -45,7 +45,12 @@ a, a:visited {
 }
 
 h1 {
-  margin: var(--spacing-l) 0 var(--spacing-m) 0;
+  margin: var(--spacing-l) 0 0 0;
+}
+
+.subtitle {
+  margin-bottom: var(--spacing-m);
+  opacity: .8;
 }
 
 .image-container {
@@ -61,12 +66,25 @@ h1 {
   padding: var(--spacing-m) 0;
 }
 
+@media screen and (width <= 800px) {
+  .image {
+    max-width: 100%;
+  }
+}
+
 dialog {
-  width: 80%;
-  height: 80%;
+  width: 90vw;
+  height: 90vh;
   border: none;
   display: flex;
   background: var(--bg-lighter);
+}
+
+@media screen and (width <= 500px) {
+  dialog {
+    height: fit-content;
+    max-height: 100%;
+  }
 }
 
 ::backdrop {
