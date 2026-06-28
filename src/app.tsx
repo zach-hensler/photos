@@ -24,7 +24,7 @@ export function App() {
         }
 
         return (
-            <img class="image" onClick={onClick} src={"photos/" + image.file}/>
+            <img key={image.file} class="image" onClick={onClick} src={"photos/" + image.file}/>
         )
     }
 
