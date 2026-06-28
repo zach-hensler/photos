@@ -33,23 +33,25 @@ export const cats: ImageMetadata[] = [
 ]
 
 export const floral: ImageMetadata[] = [
-    { file: 'floral/white_flower.JPG' },
     { file: 'metea/white_flower.JPG' },
     { file: 'colorado_springs/indigo_flower.JPG' },
     { file: 'colorado_springs/pink_flower.JPG' },
+    { file: 'floral/white_flower.JPG' },
 ]
 
 export const metea: ImageMetadata[] = [
     { file: 'metea/birdhouse.JPG' },
     { file: 'metea/canopy.JPG' },
+    { file: 'metea/funky_tree.jpg' },
+    { file: 'metea/path_dropoff.JPG' },
     { file: 'metea/dappled_path.jpg' },
+    { file: 'metea/fallen_tree.jpg' },
     { file: 'metea/bridge.JPG' },
     { file: 'metea/mossy_log.jpg' },
-    { file: 'metea/fallen_tree.jpg' },
 ]
 
 export const wildlife: ImageMetadata[] = [
-    { file: 'colorado_springs/mallard.JPG' },
+    { file: 'colorado_springs/mallard.jpg' },
     { file: 'wildlife/snail.JPG' },
     { file: 'wildlife/robin.JPG' },
     { file: 'wildlife/catbird.jpg' },
