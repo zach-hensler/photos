@@ -1,6 +1,6 @@
 :root {
-  --bg: hsl(260, 100%, 4%);
-  --bg-lighter: hsl(from var(--bg) h s calc(l + 3));
+  --bg: hsl(260, 100%, 3%);
+  --bg-lighter: hsl(from var(--bg) h s calc(l + 2));
 
   --font: hsl(from var(--bg) h s 88%);
 
@@ -77,23 +77,26 @@ h1 {
 }
 
 dialog {
-  width: 90vw;
-  height: 90vh;
+  width: 95vw;
+  height: 95vh;
   border: none;
   display: flex;
   background: var(--bg-lighter);
+  padding: 0;
 }
 
-@media screen and (width <= 500px) {
+@media screen and (width <= 550px) {
   dialog {
     height: fit-content;
     max-height: 100%;
+    width: 100%;
+    max-width: 100%;
   }
 }
 
 ::backdrop {
   background: var(--bg);
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .dialog-image {

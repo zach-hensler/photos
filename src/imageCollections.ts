@@ -19,10 +19,10 @@ export const favorites: ImageMetadata[] = [
 ]
 
 export const astro: ImageMetadata[] = [
+    { file: 'astro/blood_moon.jpg' },
+    { file: 'astro/moon_pale.jpg' },
     { file: 'astro/big_dipper.jpg' },
     { file: 'astro/stars.jpg' },
-    { file: 'astro/sunset_clouds.jpg' },
-    { file: 'astro/big_red_cloud.jpg' },
 ]
 
 export const cats: ImageMetadata[] = [
