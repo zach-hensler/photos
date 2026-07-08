@@ -1,9 +1,9 @@
 import {useEffect, useState, useRef} from 'preact/hooks'
-import {favorites, astro, cats, floral, metea, wildlife} from './imageCollections.ts'
+import {favorites, astro, cats, floral, manistee_river, metea, wildlife} from './imageCollections.ts'
 import type {ImageMetadata} from './imageCollections.ts'
 import './app.css'
 
-type collections = 'Favorites' | 'Astro' | 'Cats' | 'Floral' | 'Metea' | 'Wildlife';
+type collections = 'Favorites' | 'Astro' | 'Cats' | 'Floral' | 'Manistee River' | 'Metea' | 'Wildlife';
 
 export function App() {
     const [collection, setCollection] = useState<collections>('Favorites')
@@ -51,6 +51,8 @@ export function App() {
                 return cats;
             case 'Floral':
                 return floral;
+            case 'Manistee River':
+                return manistee_river;
             case 'Metea':
                 return metea;
             case 'Wildlife':
@@ -68,10 +70,11 @@ export function App() {
                         id="collection"
                         onChange={(e) => setCollection(e.target.value)}>
                         <option value="Favorites">Favorites</option>
-                        <option value="Metea">Metea</option>
                         <option value="Astro">Astro</option>
                         <option value="Cats">Cats</option>
                         <option value="Floral">Floral</option>
+                        <option value="Manistee River">Manistee River</option>
+                        <option value="Metea">Metea</option>
                         <option value="Wildlife">Wildlife</option>
                     </select>
                 </div>

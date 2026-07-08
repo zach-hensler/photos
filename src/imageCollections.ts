@@ -10,8 +10,8 @@ export const favorites: ImageMetadata[] = [
     { file: 'evening_fence.jpg' },
     { file: 'floral/white_flower.JPG' },
     { file: 'evening_pines.JPG' },
-    { file: 'astro/big_dipper.jpg' },
-    { file: 'astro/stars.jpg' },
+    { file: 'manistee_river/satellite_trails.jpg' },
+    { file: 'manistee_river/vega_centered.jpg' },
     { file: 'wildlife/bird_feeder.JPG' },
     { file: 'cats/ivy_silhouette.JPG' },
     { file: 'astro/sunset_clouds.jpg' },
@@ -22,7 +22,9 @@ export const astro: ImageMetadata[] = [
     { file: 'astro/blood_moon.jpg' },
     { file: 'astro/moon_pale.jpg' },
     { file: 'astro/big_dipper.jpg' },
-    { file: 'astro/stars.jpg' },
+    { file: 'manistee_river/satellite_trails.jpg' },
+    { file: 'manistee_river/vega_centered.jpg' },
+    { file: 'manistee_river/vega_tree.jpg' },
 ]
 
 export const cats: ImageMetadata[] = [
@@ -36,7 +38,22 @@ export const floral: ImageMetadata[] = [
     { file: 'metea/white_flower.JPG' },
     { file: 'colorado_springs/indigo_flower.JPG' },
     { file: 'colorado_springs/pink_flower.JPG' },
+    { file: 'manistee_river/purple_flower.jpg' },
+    { file: 'manistee_river/small_blue_flower.jpg' },
+    { file: 'manistee_river/indigo_flower.jpg' },
+    { file: 'manistee_river/orange_flower.jpg' },
     { file: 'floral/white_flower.JPG' },
+]
+
+export const manistee_river: ImageMetadata[] = [
+    { file: 'manistee_river/manistee_river.jpg' },
+    { file: 'manistee_river/clearing.jpg' },
+    { file: 'manistee_river/creek.jpg' },
+    { file: 'manistee_river/ferns.jpg' },
+    { file: 'manistee_river/cabin.jpg' },
+    { file: 'manistee_river/cabin_porch.JPG' },
+    { file: 'manistee_river/mushrooms.jpg' },
+    { file: 'manistee_river/orange_mushrooms.jpg' },
 ]
 
 export const metea: ImageMetadata[] = [
