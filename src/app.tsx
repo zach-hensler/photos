@@ -65,7 +65,7 @@ export function App() {
     return (
         <>
             <p className="subtitle">
-                <span>Click to photos expand</span>
+                <span>Click photos to expand</span>
                 <div>
                     <label htmlFor="collection">Collection: </label>
                     <select
