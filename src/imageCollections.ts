@@ -11,7 +11,7 @@ export const favorites: ImageMetadata[] = [
     { file: 'floral/white_flower.JPG' },
     { file: 'evening_pines.JPG' },
     { file: 'manistee_river/satellite_trails.jpg' },
-    { file: 'manistee_river/vega_centered.jpg' },
+    { file: 'manistee_river/vega_tree.jpg' },
     { file: 'wildlife/bird_feeder.JPG' },
     { file: 'cats/ivy_silhouette.JPG' },
     { file: 'astro/sunset_clouds.jpg' },
@@ -32,6 +32,19 @@ export const cats: ImageMetadata[] = [
     { file: 'cats/zeus_side_lighting.JPG' },
     { file: 'cats/ivy_silhouette.JPG' },
     { file: 'cats/luna_sun.jpg' },
+]
+
+export const colorado_springs: ImageMetadata[] = [
+    { file: 'colorado_springs/storm_over_mountains.jpg' },
+    { file: 'colorado_springs/rocks.jpg' },
+    { file: 'colorado_springs/garden_of_gods_2.jpg' },
+    { file: 'colorado_springs/garden_of_gods.jpg' },
+    { file: 'colorado_springs/mallard.jpg' },
+    { file: 'colorado_springs/mountain_over_lake.jpg' },
+    { file: 'colorado_springs/train.jpg' },
+    { file: 'colorado_springs/pikes_peak_tracks.jpg' },
+    { file: 'colorado_springs/marmot.jpg' },
+    { file: 'colorado_springs/pikes_peak.jpg' },
 ]
 
 export const floral: ImageMetadata[] = [
@@ -69,7 +82,7 @@ export const metea: ImageMetadata[] = [
 
 export const wildlife: ImageMetadata[] = [
     { file: 'colorado_springs/mallard.jpg' },
-    { file: 'wildlife/snail.JPG' },
+    { file: 'colorado_springs/marmot.jpg' },
     { file: 'wildlife/robin.JPG' },
     { file: 'wildlife/catbird.jpg' },
 ]
