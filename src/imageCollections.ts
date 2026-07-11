@@ -8,13 +8,13 @@ export const favorites: ImageMetadata[] = [
     { file: 'wildlife/catbird.jpg' },
     { file: 'metea/dappled_path.jpg' },
     { file: 'evening_fence.jpg' },
-    { file: 'floral/white_flower.JPG' },
-    { file: 'evening_pines.JPG' },
+    { file: 'floral/white_flower.jpg' },
+    { file: 'evening_pines.jpg' },
     { file: 'manistee_river/satellite_trails.jpg' },
     { file: 'manistee_river/vega_tree.jpg' },
     { file: 'lake/canoe.jpg' },
     { file: 'lake/sunset.jpg' },
-    { file: 'cats/ivy_silhouette.JPG' },
+    { file: 'cats/ivy_silhouette.jpg' },
     { file: 'balcony_long_exposure.jpg' }
 ]
 
@@ -29,8 +29,8 @@ export const astro: ImageMetadata[] = [
 
 export const cats: ImageMetadata[] = [
     { file: 'cats/smokie_pounce.jpg' },
-    { file: 'cats/zeus_side_lighting.JPG' },
-    { file: 'cats/ivy_silhouette.JPG' },
+    { file: 'cats/zeus_side_lighting.jpg' },
+    { file: 'cats/ivy_silhouette.jpg' },
     { file: 'cats/luna_sun.jpg' },
 ]
 
@@ -49,13 +49,13 @@ export const colorado_springs: ImageMetadata[] = [
 
 export const floral: ImageMetadata[] = [
     { file: 'metea/white_flower.JPG' },
-    { file: 'colorado_springs/indigo_flower.JPG' },
-    { file: 'colorado_springs/pink_flower.JPG' },
+    { file: 'colorado_springs/indigo_flower.jpg' },
+    { file: 'colorado_springs/pink_flower.jpg' },
     { file: 'manistee_river/purple_flower.jpg' },
     { file: 'manistee_river/small_blue_flower.jpg' },
     { file: 'manistee_river/indigo_flower.jpg' },
     { file: 'manistee_river/orange_flower.jpg' },
-    { file: 'floral/white_flower.JPG' },
+    { file: 'floral/white_flower.jpg' },
 ]
 
 export const manistee_river: ImageMetadata[] = [
@@ -64,7 +64,7 @@ export const manistee_river: ImageMetadata[] = [
     { file: 'manistee_river/creek.jpg' },
     { file: 'manistee_river/ferns.jpg' },
     { file: 'manistee_river/cabin.jpg' },
-    { file: 'manistee_river/cabin_porch.JPG' },
+    { file: 'manistee_river/cabin_porch.jpg' },
     { file: 'manistee_river/mushrooms.jpg' },
     { file: 'manistee_river/orange_mushrooms.jpg' },
 ]
