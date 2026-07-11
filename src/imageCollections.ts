@@ -12,9 +12,9 @@ export const favorites: ImageMetadata[] = [
     { file: 'evening_pines.JPG' },
     { file: 'manistee_river/satellite_trails.jpg' },
     { file: 'manistee_river/vega_tree.jpg' },
-    { file: 'wildlife/bird_feeder.JPG' },
+    { file: 'lake/canoe.jpg' },
+    { file: 'lake/sunset.jpg' },
     { file: 'cats/ivy_silhouette.JPG' },
-    { file: 'astro/sunset_clouds.jpg' },
     { file: 'balcony_long_exposure.jpg' }
 ]
 
@@ -82,6 +82,8 @@ export const metea: ImageMetadata[] = [
 
 export const wildlife: ImageMetadata[] = [
     { file: 'colorado_springs/mallard.jpg' },
+    { file: 'wildlife/deer.jpg' },
+    { file: 'wildlife/snail.JPG' },
     { file: 'colorado_springs/marmot.jpg' },
     { file: 'wildlife/robin.JPG' },
     { file: 'wildlife/catbird.jpg' },
