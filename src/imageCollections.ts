@@ -8,23 +8,23 @@ export const favorites: ImageMetadata[] = [
     { file: 'wildlife/catbird.jpg' },
     { file: 'metea/dappled_path.jpg' },
     { file: 'evening_fence.jpg' },
-    { file: 'floral/white_flower.jpg' },
-    { file: 'evening_pines.jpg' },
-    { file: 'manistee_river/satellite_trails.jpg' },
-    { file: 'manistee_river/vega_tree.jpg' },
     { file: 'lake/canoe.jpg' },
     { file: 'lake/sunset.jpg' },
+    { file: 'floral/white_flower.jpg' },
+    { file: 'evening_pines.jpg' },
     { file: 'cats/ivy_silhouette.jpg' },
-    { file: 'balcony_long_exposure.jpg' }
+    { file: 'astro/big_dipper.jpg' },
+    { file: 'manistee_river/satellite_trails.jpg' },
+    { file: 'manistee_river/vega_tree.jpg' },
 ]
 
 export const astro: ImageMetadata[] = [
+    { file: 'manistee_river/vega_tree.jpg' },
+    { file: 'astro/big_dipper.jpg' },
     { file: 'astro/blood_moon.jpg' },
     { file: 'astro/moon_pale.jpg' },
-    { file: 'astro/big_dipper.jpg' },
     { file: 'manistee_river/satellite_trails.jpg' },
     { file: 'manistee_river/vega_centered.jpg' },
-    { file: 'manistee_river/vega_tree.jpg' },
 ]
 
 export const cats: ImageMetadata[] = [
@@ -74,16 +74,16 @@ export const metea: ImageMetadata[] = [
     { file: 'metea/canopy.JPG' },
     { file: 'metea/funky_tree.jpg' },
     { file: 'metea/path_dropoff.JPG' },
-    { file: 'metea/dappled_path.jpg' },
-    { file: 'metea/fallen_tree.jpg' },
     { file: 'metea/bridge.JPG' },
+    { file: 'metea/fallen_tree.jpg' },
+    { file: 'metea/dappled_path.jpg' },
     { file: 'metea/mossy_log.jpg' },
 ]
 
 export const wildlife: ImageMetadata[] = [
     { file: 'colorado_springs/mallard.jpg' },
+    { file: 'wildlife/ducks_on_a_log.jpg' },
     { file: 'wildlife/deer.jpg' },
-    { file: 'wildlife/snail.JPG' },
     { file: 'colorado_springs/marmot.jpg' },
     { file: 'wildlife/robin.JPG' },
     { file: 'wildlife/catbird.jpg' },
