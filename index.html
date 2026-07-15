@@ -2,15 +2,35 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image" href="/icon.png" />
+    <link rel="icon" type="image" href="icon.png" />
+    <link rel="stylesheet" href="site.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Photos by Zach Hensler</title>
   </head>
   <body>
     <main>
       <h1>Photos by Zach Hensler</h1>
-      <div id="app"></div>
-      <script type="module" src="/src/main.tsx"></script>
+        <p className="subtitle">
+          <span>Click photos to expand</span>
+          <div>
+              <label htmlFor="collection">Collection: </label>
+              <select id="collection" onchange="handleCollectionChange(event)">
+                  <option value="Favorites">Favorites</option>
+                  <option value="Astro">Astro</option>
+                  <option value="Cats">Cats</option>
+                  <option value="Colorado Springs">Colorado Springs</option>
+                  <option value="Floral">Floral</option>
+                  <option value="Manistee River">Manistee River</option>
+                  <option value="Metea">Metea</option>
+                  <option value="Wildlife">Wildlife</option>
+              </select>
+          </div>
+      </p>
+      <div id="image-container">
+      </div>
+      <dialog id="expanded-dialog" onclick="closeExpandedDialog()">
+        <img id="dialog-image"/>
+      </dialog>
     </main>
     <footer>
       <div class="footer-links">
@@ -18,4 +38,159 @@
       </div>
     </footer>
   </body>
+  <script>
+    function hydrateImages(collectionName) {
+      let collection = [];
+      switch(collectionName) {
+        case "Favorites":
+          collection = favorites;
+          break;
+        case "Astro":
+          collection = astro;
+          break;
+        case "Cats":
+          collection = cats;
+          break;
+        case "Colorado Springs":
+          collection = colorado_springs;
+          break;
+        case "Floral":
+          collection = floral;
+          break;
+        case "Manistee River":
+          collection = manistee_river;
+          break;
+        case "Metea":
+          collection = metea;
+          break;
+        case "Wildlife":
+          collection = wildlife;
+          break;
+      }
+
+      const container = document.getElementById("image-container");
+      // remove all previous images
+      while (container.hasChildNodes()) {
+        container.removeChild(container.firstChild);
+      }
+
+      // hydrate new images
+      for (const image of collection) {
+        const newImg = document.createElement("img")
+        newImg.src = "photos/" + image.file;
+        newImg.className = "image";
+        newImg.onclick = () => openExpandedDialog(newImg.src)
+
+        container.appendChild(newImg);
+      }
+    }
+
+    function handleCollectionChange(event) {
+      hydrateImages(event.target.value)
+    }
+
+    function openExpandedDialog(src) {
+      const dialog = document.getElementById("expanded-dialog");
+      const dialogImg = document.getElementById("dialog-image");
+      dialog.className = "";
+      dialogImg.src = src;
+      dialog.showModal();
+    }
+
+    function closeExpandedDialog() {
+      const dialog = document.getElementById("expanded-dialog");
+      dialog.className = "hidden";
+      dialog.close();
+    }
+
+    const favorites = [
+      { file: 'wildlife/robin.JPG' },
+      { file: 'wildlife/catbird.jpg' },
+      { file: 'metea/dappled_path.jpg' },
+      { file: 'evening_fence.jpg' },
+      { file: 'lake/canoe.jpg' },
+      { file: 'lake/sunset.jpg' },
+      { file: 'floral/white_flower.jpg' },
+      { file: 'evening_pines.jpg' },
+      { file: 'cats/ivy_silhouette.jpg' },
+      { file: 'astro/big_dipper.jpg' },
+      { file: 'manistee_river/satellite_trails.jpg' },
+      { file: 'manistee_river/vega_tree.jpg' },
+    ]
+
+    const astro = [
+      { file: 'manistee_river/vega_tree.jpg' },
+      { file: 'astro/big_dipper.jpg' },
+      { file: 'astro/blood_moon.jpg' },
+      { file: 'astro/moon_pale.jpg' },
+      { file: 'manistee_river/satellite_trails.jpg' },
+      { file: 'manistee_river/vega_centered.jpg' },
+    ]
+
+    const cats = [
+      { file: 'cats/smokie_pounce.jpg' },
+      { file: 'cats/zeus_side_lighting.jpg' },
+      { file: 'cats/ivy_silhouette.jpg' },
+      { file: 'cats/luna_sun.jpg' },
+    ]
+
+    const colorado_springs = [
+      { file: 'colorado_springs/storm_over_mountains.jpg' },
+      { file: 'colorado_springs/rocks.jpg' },
+      { file: 'colorado_springs/garden_of_gods_2.jpg' },
+      { file: 'colorado_springs/garden_of_gods.jpg' },
+      { file: 'colorado_springs/mallard.jpg' },
+      { file: 'colorado_springs/mountain_over_lake.jpg' },
+      { file: 'colorado_springs/train.jpg' },
+      { file: 'colorado_springs/pikes_peak_tracks.jpg' },
+      { file: 'colorado_springs/marmot.jpg' },
+      { file: 'colorado_springs/pikes_peak.jpg' },
+    ]
+
+    const floral = [
+      { file: 'metea/white_flower.JPG' },
+      { file: 'colorado_springs/indigo_flower.jpg' },
+      { file: 'colorado_springs/pink_flower.jpg' },
+      { file: 'manistee_river/purple_flower.jpg' },
+      { file: 'manistee_river/small_blue_flower.jpg' },
+      { file: 'manistee_river/indigo_flower.jpg' },
+      { file: 'manistee_river/orange_flower.jpg' },
+      { file: 'floral/white_flower.jpg' },
+    ]
+
+    const manistee_river = [
+      { file: 'manistee_river/manistee_river.jpg' },
+      { file: 'manistee_river/clearing.jpg' },
+      { file: 'manistee_river/creek.jpg' },
+      { file: 'manistee_river/ferns.jpg' },
+      { file: 'manistee_river/cabin.jpg' },
+      { file: 'manistee_river/cabin_porch.jpg' },
+      { file: 'manistee_river/mushrooms.jpg' },
+      { file: 'manistee_river/orange_mushrooms.jpg' },
+    ]
+
+    const metea = [
+      { file: 'metea/birdhouse.JPG' },
+      { file: 'metea/canopy.JPG' },
+      { file: 'metea/funky_tree.jpg' },
+      { file: 'metea/path_dropoff.JPG' },
+      { file: 'metea/bridge.JPG' },
+      { file: 'metea/fallen_tree.jpg' },
+      { file: 'metea/dappled_path.jpg' },
+      { file: 'metea/mossy_log.jpg' },
+    ]
+
+    const wildlife = [
+      { file: 'colorado_springs/mallard.jpg' },
+      { file: 'wildlife/ducks_on_a_log.jpg' },
+      { file: 'wildlife/deer.jpg' },
+      { file: 'colorado_springs/marmot.jpg' },
+      { file: 'wildlife/robin.JPG' },
+      { file: 'wildlife/catbird.jpg' },
+    ]
+
+
+    hydrateImages("Favorites");
+    closeExpandedDialog();
+  </script>
 </html>
