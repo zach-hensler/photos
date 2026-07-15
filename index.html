@@ -77,9 +77,9 @@
       // hydrate new images
       for (const image of collection) {
         const newImg = document.createElement("img")
-        newImg.src = "photos/" + image.file;
+        newImg.src = "reduced/" + image.file;
         newImg.className = "image";
-        newImg.onclick = () => openExpandedDialog(newImg.src)
+        newImg.onclick = () => openExpandedDialog(image.file)
 
         container.appendChild(newImg);
       }
@@ -90,10 +90,11 @@
     }
 
     function openExpandedDialog(src) {
-      const dialog = document.getElementById("expanded-dialog");
       const dialogImg = document.getElementById("dialog-image");
+      dialogImg.src = "full/" + src;
+
+      const dialog = document.getElementById("expanded-dialog");
       dialog.className = "";
-      dialogImg.src = src;
       dialog.showModal();
     }
 
@@ -101,17 +102,20 @@
       const dialog = document.getElementById("expanded-dialog");
       dialog.className = "hidden";
       dialog.close();
+
+      const dialogImg = document.getElementById("dialog-image");
+      dialogImg.src = "";
     }
 
     const favorites = [
       { file: 'wildlife/robin.JPG' },
       { file: 'wildlife/catbird.jpg' },
       { file: 'metea/dappled_path.jpg' },
-      { file: 'evening_fence.jpg' },
+      { file: 'unsorted/evening_fence.jpg' },
       { file: 'lake/canoe.jpg' },
       { file: 'lake/sunset.jpg' },
       { file: 'floral/white_flower.jpg' },
-      { file: 'evening_pines.jpg' },
+      { file: 'unsorted/evening_pines.jpg' },
       { file: 'cats/ivy_silhouette.jpg' },
       { file: 'astro/big_dipper.jpg' },
       { file: 'manistee_river/satellite_trails.jpg' },
