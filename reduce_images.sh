@@ -12,6 +12,6 @@ do
 	do
 		FILENAME=${image#./full/$PARSED/}
 		echo $image
-		magick $image -resize 50% reduced/$PARSED/$FILENAME
+		magick $image -resize 4096@ reduced/$PARSED/$FILENAME
 	done
 done
