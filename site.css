@@ -65,14 +65,14 @@ h1 {
 
 .image {
   cursor: zoom-in;
-  max-width: 48%;
+  width: 48%;
   height: 100%;
   padding: var(--spacing-m) 0;
 }
 
 @media screen and (width <= 800px) {
   .image {
-    max-width: 100%;
+    width: 100%;
   }
 }
 

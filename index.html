@@ -80,6 +80,10 @@
         newImg.src = "reduced/" + image.file;
         newImg.className = "image";
         newImg.onclick = () => openExpandedDialog(image.file)
+        newImg.onload= () => {
+          newImg.onload=null;
+          newImg.src=`full/${image.file}`;
+        }
 
         container.appendChild(newImg);
       }
