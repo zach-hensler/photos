@@ -10,8 +10,8 @@
   <body>
     <main>
       <h1>Photos by Zach Hensler</h1>
-        <p class="subtitle">
-          <span>Click photos to expand</span>
+        <div class="subtitle">
+          <p>Click photos to expand</p>
           <div>
               <label htmlFor="collection">Collection: </label>
               <select id="collection" onchange="handleCollectionChange(event)">
@@ -25,7 +25,7 @@
                   <option value="Wildlife">Wildlife</option>
               </select>
           </div>
-      </p>
+      </div>
       <div id="image-container">
       </div>
       <dialog id="expanded-dialog" onclick="closeExpandedDialog()">
