@@ -95,7 +95,11 @@
 
     function openExpandedDialog(src) {
       const dialogImg = document.getElementById("dialog-image");
-      dialogImg.src = "full/" + src;
+      dialogImg.src = "smallest/" + src;
+      dialogImg.onload= () => {
+        dialogImg.onload=null;
+        dialogImg.src=`full/${src}`;
+      }
 
       const dialog = document.getElementById("expanded-dialog");
       dialog.className = "";
