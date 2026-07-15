@@ -77,12 +77,12 @@
       // hydrate new images
       for (const image of collection) {
         const newImg = document.createElement("img")
-        newImg.src = "reduced/" + image.file;
+        newImg.src = "smallest/" + image.file;
         newImg.className = "image";
         newImg.onclick = () => openExpandedDialog(image.file)
         newImg.onload= () => {
           newImg.onload=null;
-          newImg.src=`full/${image.file}`;
+          newImg.src=`medium/${image.file}`;
         }
 
         container.appendChild(newImg);
