@@ -95,7 +95,9 @@
 
     function openExpandedDialog(src) {
       const dialogImg = document.getElementById("dialog-image");
-      dialogImg.src = "smallest/" + src;
+
+      // Medium image should already be cached from page load
+      dialogImg.src = "medium/" + src;
       dialogImg.onload= () => {
         dialogImg.onload=null;
         dialogImg.src=`full/${src}`;
