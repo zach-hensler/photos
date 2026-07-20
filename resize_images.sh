@@ -16,9 +16,18 @@ do
 	do
 		FILENAME=${image#./full/$PARSED/}
 
-		magick $image -resize 4096@ smallest/$PARSED/$FILENAME
-		magick $image -resize 1000000@ medium/$PARSED/$FILENAME
-		
-		echo "$image resized"
+		if [ -f smallest/$PARSED/$FILENAME ]; then
+			echo "Skipping smallest/$PARSED/$FILENAME, already exists"
+		else
+			magick $image -resize 4096@ smallest/$PARSED/$FILENAME
+			echo "Created smallest/$PARSED/$FILENAME"
+		fi
+
+		if [ -f medium/$PARSED/$FILENAME ]; then
+			echo "Skipping medium/$PARSED/$FILENAME, already exists"
+		else
+			magick $image -resize 1000000@ medium/$PARSED/$FILENAME
+			echo "Created smallest/$PARSED/$FILENAME"
+		fi
 	done
 done
