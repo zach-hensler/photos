@@ -20,6 +20,7 @@
                   <option value="Cats">Cats</option>
                   <option value="Colorado Springs">Colorado Springs</option>
                   <option value="Floral">Floral</option>
+                  <option value="Macro">Macro</option>
                   <option value="Manistee River">Manistee River</option>
                   <option value="Metea">Metea</option>
                   <option value="Wildlife">Wildlife</option>
@@ -56,6 +57,9 @@
           break;
         case "Floral":
           collection = floral;
+          break;
+        case 'Macro':
+          collection = macro;
           break;
         case "Manistee River":
           collection = manistee_river;
@@ -120,18 +124,20 @@
     const favorites = [
       { file: 'wildlife/robin.JPG' },
       { file: 'wildlife/catbird.jpg' },
-      { file: 'lake/canoe.jpg' },
-      { file: 'lake/sunset.jpg' },
       { file: 'floral/white_flower.jpg' },
-      { file: 'unsorted/evening_pines.jpg' },
+      { file: 'floral/rosepink.jpg' },
       { file: 'wildlife/deer.jpg' },
       { file: 'wildlife/squirrel.jpg' },
       { file: 'floral/indigo_flower.jpg' },
       { file: 'wildlife/bee.jpg' },
+      { file: 'wildlife/hummingbird_flying.jpg' },
+      { file: 'metea/bee.jpg' },
+      { file: 'lake/canoe.jpg' },
+      { file: 'lake/sunset.jpg' },
+      { file: 'metea/mushroom.jpg' },
+      { file: 'unsorted/evening_pines.jpg' },
       { file: 'astro/big_dipper.jpg' },
       { file: 'manistee_river/vega_tree.jpg' },
-      { file: 'cats/ivy_silhouette.jpg' },
-      { file: 'cats/zeus_side_lighting.jpg' },
     ]
 
     const astro = [
@@ -166,16 +172,29 @@
     ]
 
     const floral = [
-      { file: 'metea/white_flower.JPG' },
+      { file: 'floral/indigo_flower.jpg' },
       { file: 'colorado_springs/indigo_flower.jpg' },
       { file: 'colorado_springs/pink_flower.jpg' },
       { file: 'manistee_river/purple_flower.jpg' },
       { file: 'floral/black_eyed_susans.jpg' },
       { file: 'floral/bergamont_close_up.jpg' },
       { file: 'floral/bergamont.jpg' },
-      { file: 'floral/white_flower.jpg' },
-      { file: 'manistee_river/orange_flower.jpg' },
-      { file: 'floral/indigo_flower.jpg' },
+      { file: 'floral/rosepink.jpg' },
+      // { file: 'floral/white_flower.jpg' },
+      // { file: 'manistee_river/orange_flower.jpg' },
+      { file: 'floral/false_sunflower.jpg' },
+      { file: 'metea/white_flower.JPG' },
+    ]
+
+    const macro = [
+      { file: 'metea/bee.jpg' },
+      { file: 'metea/moss.jpg' },
+      { file: 'metea/mushroom.jpg' },
+      { file: 'metea/burdock_flowers.jpg' },
+      { file: 'metea/slug.jpg' },
+      { file: 'metea/slug_eating.jpg' },
+      { file: 'metea/leaf_bowl.jpg' },
+      { file: 'metea/leaf_closeup.jpg' }
     ]
 
     const manistee_river = [
@@ -196,6 +215,8 @@
       { file: 'metea/path_dropoff.JPG' },
       { file: 'metea/bridge.JPG' },
       { file: 'metea/fallen_tree.jpg' },
+      { file: 'metea/moss.jpg' },
+      { file: 'metea/leaf_bowl.jpg' },
       { file: 'metea/dappled_path.jpg' },
       { file: 'metea/mossy_log.jpg' },
     ]
@@ -203,14 +224,15 @@
     const wildlife = [
       { file: 'colorado_springs/mallard.jpg' },
       { file: 'wildlife/squirrel.jpg' },
-      { file: 'wildlife/deer.jpg' },
+      { file: 'metea/bee.jpg' },
       { file: 'wildlife/bee.jpg' },
       { file: 'wildlife/hummingbird_drinking.jpg' },
       { file: 'wildlife/hummingbird_flying.jpg' },
       { file: 'wildlife/hippo_zoo.jpg' },
       { file: 'wildlife/peacock_zoo.jpg' },
       { file: 'wildlife/cardinal.jpg' },
-      { file: 'wildlife/ducks_on_a_log.jpg' },
+      { file: 'wildlife/deer.jpg' },
+      // { file: 'wildlife/ducks_on_a_log.jpg' },
       { file: 'wildlife/robin.JPG' },
       { file: 'wildlife/catbird.jpg' },
     ]
